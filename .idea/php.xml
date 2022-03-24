@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/sb1/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/sb1/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/sb1/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/sb1/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/sb1/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/sb1/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/sb1/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/sb1/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/sb1/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/sb1/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/sb1/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/sb1/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/sb1/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/sb1/vendor/stack/builder" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/sb1/vendor/pear/pear_exception" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/sb1/vendor/pear/console_getopt" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/sb1/vendor/pear/archive_tar" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/sb1/vendor/pear/pear-core-minimal" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony-cmf/routing" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/sb1/vendor/typo3/phar-stream-wrapper" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/sb1/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/sb1/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/sb1/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/sb1/vendor/drupal/core-composer-scaffold" />
+      <path value="$PROJECT_DIR$/sb1/vendor/drupal/core-project-message" />
+      <path value="$PROJECT_DIR$/sb1/vendor/laminas/laminas-stdlib" />
+      <path value="$PROJECT_DIR$/sb1/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/sb1/vendor/laminas/laminas-feed" />
+      <path value="$PROJECT_DIR$/sb1/vendor/laminas/laminas-escaper" />
+      <path value="$PROJECT_DIR$/sb1/vendor/composer" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/sb1/vendor/chi-teck/drupal-code-generator" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/config" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/annotated-command" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/robo" />
+      <path value="$PROJECT_DIR$/sb1/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/filter-via-dot-access-data" />
+      <path value="$PROJECT_DIR$/sb1/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/output-formatters" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/self-update" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/log" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/site-alias" />
+      <path value="$PROJECT_DIR$/sb1/vendor/consolidation/site-process" />
+      <path value="$PROJECT_DIR$/sb1/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/sb1/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/sb1/vendor/enlightn/security-checker" />
+      <path value="$PROJECT_DIR$/sb1/vendor/league/container" />
+      <path value="$PROJECT_DIR$/sb1/vendor/drush/drush" />
+      <path value="$PROJECT_DIR$/sb1/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/sb1/vendor/grasmash/expander" />
+      <path value="$PROJECT_DIR$/sb1/vendor/webflo/drupal-finder" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/sb1/vendor/symfony/finder" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>
