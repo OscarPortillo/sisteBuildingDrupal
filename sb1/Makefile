@@ -9,10 +9,10 @@ test:
 	cd ./tests/$(DRUPAL_VER) && PHP_VER=$(PHP_VER) ./run.sh
 
 build_containers:
-	sudo docker-compose up -d
+	docker-compose up -d
 
 bash_mariadb:
-	sudo docker exec -it sb1_mariadb bash
+	docker exec -it sb1_mariadb bash
 
 bash_php:
-	sudo docker exec -it sb1_php bash
+	docker exec -it sb1_php bash

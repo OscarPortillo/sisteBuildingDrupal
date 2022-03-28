@@ -1,0 +1,15 @@
+.view .node--view-mode-teaser .node__title {
+  margin-left: 0 !important;
+}
+
+.view .node--view-mode-teaser .node__content .field--name-field-image {
+  margin: 24px 16px 0 0;
+}
+
+.view .node--view-mode-teaser .field--type-entity-reference .field__item:first-child a {
+  padding-left: 0 !important;
+}
+
+.view .node__header {
+  margin-bottom: 0;
+}

@@ -1,0 +1,10 @@
+body {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),url('fonts-files/exo-2/exo-2-v15-latin-regular.woff2') format('woff2'),url('fonts-files/exo-2/exo-2-v15-latin-regular.woff') format('woff');
+}

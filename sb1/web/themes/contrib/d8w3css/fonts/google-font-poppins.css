@@ -1,0 +1,10 @@
+body {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),url('fonts-files/poppins/poppins-v15-latin-regular.woff2') format('woff2'),url('fonts-files/poppins/poppins-v15-latin-regular.woff') format('woff');
+}

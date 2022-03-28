@@ -1,0 +1,10 @@
+body {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind Siliguri';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),url('fonts-files/hind-siliguri/hind-siliguri-v7-latin-regular.woff2') format('woff2'),url('fonts-files/hind-siliguri/hind-siliguri-v7-latin-regular.woff') format('woff');
+}

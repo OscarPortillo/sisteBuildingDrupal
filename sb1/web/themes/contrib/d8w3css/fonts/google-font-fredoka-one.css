@@ -1,0 +1,10 @@
+body {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),url('fonts-files/fredoka-one/fredoka-one-v8-latin-regular.woff2') format('woff2'),url('fonts-files/fredoka-one/fredoka-one-v8-latin-regular.woff') format('woff');
+}

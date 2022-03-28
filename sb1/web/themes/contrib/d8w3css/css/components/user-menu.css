@@ -1,0 +1,14 @@
+.ul-parent-account li {
+  float: none;
+  width: auto;
+  display: inline-block;
+}
+
+.ul-parent-account li a {
+  padding: 7px 14px;
+}
+
+.ul-parent-account {
+  float: right;
+  width: auto;
+}

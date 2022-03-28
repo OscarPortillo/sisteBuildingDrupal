@@ -1,0 +1,10 @@
+body {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Stencil Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),url('fonts-files/big-shoulders-stencil-text/big-shoulders-stencil-text-v10-latin-700.woff2') format('woff2'),url('fonts-files/big-shoulders-stencil-text/big-shoulders-stencil-text-v10-latin-700.woff') format('woff');
+}

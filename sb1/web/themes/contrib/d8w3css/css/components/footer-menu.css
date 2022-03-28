@@ -1,0 +1,25 @@
+.ul-parent-footer li a {
+  padding: 7px 14px;
+}
+
+#footer-menu-inner > div {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.ul-parent-footer {
+  width: 100%;
+  clear: both;
+}
+
+.ul-parent-footer li {
+  float: none;
+  width: auto;
+  display: inline-block;
+}
+
+/* label form in the footer */
+.footer-menu-inner form label {
+  text-align: left;
+  float: left;
+}

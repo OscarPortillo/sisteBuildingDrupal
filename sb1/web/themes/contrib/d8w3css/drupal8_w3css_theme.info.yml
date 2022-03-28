@@ -1,0 +1,46 @@
+name: W3CSS Theme V2
+core: 8.x
+description: 'W3.CSS is a modern CSS framework with built-in responsiveness. It is Smaller, faster, easier to learn and easier to use than other CSS frameworks.<br/><strong>You can create unlimited UI design by using the <a target=_blank href=https://www.drupal.org/project/w3css_paragraphs>W3CSS Paragraphs.</strong></a><br/>Developed & Designed by <strong><a target=_blank href=https://www.alaahaddad.com>Alaa Haddad</a></strong><br/>For theme <a target=_blank href=https://www.drupal.org/node/2866181>documentation</a><br/>To view a <a target=_blank href=http://www.drupal8-w3css-theme.flashwebcenter.com>live demo</a><br/>To view the <a target=_blank href=https://drupal8-w3css-theme.flashwebcenter.com/w3css-predefined-color-themes>color themes</a><br/>For theme issues please <a href=https://www.drupal.org/project/issues/d8w3css>create issue on drupal</a><br/><a target=_blank href=https://www.flashwebcenter.com>Drupal Development</a> and <a target=_blank href=https://www.drupalcare.com>Drupal Maintenance</a>'
+package: W3CSS
+type: theme
+base theme: false
+core_version_requirement: ^8 || ^9 || ^10
+
+
+#Libraries
+libraries:
+  - drupal8_w3css_theme/w3-css
+  - drupal8_w3css_theme/d8w3css-global-styling
+
+ckeditor_stylesheets:
+  - css/theme/w3-ckeditor-iframe.css
+
+#Regions
+regions:
+  header: 'Header'
+  primary_menu_vertical: 'Primary Menu Vertical'
+  primary_menu: 'Primary Menu'
+  welcome_text: 'Welcome Text'
+  top_first: 'Top First Container'
+  top_second: 'Top Second Container'
+  top_third: 'Top Third Container'
+  highlighted: 'Highlighted'
+  page_title: 'Page Title'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  bottom_first: 'Bottom First Container'
+  bottom_second: 'Bottom Second Container'
+  bottom_third: 'Bottom Third Container'
+  bottom_forth: 'Bottom Forth Container'
+  footer_first: 'Footer First Container'
+  footer_second: 'Footer Second Container'
+  footer_third: 'Footer Third Container'
+  footer_menu: 'Footer Menu Container'
+  auto_hidden_block: 'Auto Hidden Blocks'
+
+# Information added by Drupal.org packaging script on 2022-01-23
+version: '2.0.4'
+project: 'd8w3css'
+datestamp: 1642969971
