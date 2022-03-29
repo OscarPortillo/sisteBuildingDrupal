@@ -25,6 +25,7 @@
         "drupal/d8w3css": "^2.0",
         "drupal/jquery_ui": "^1.4",
         "drupal/jquery_ui_effects": "^1.2",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
         "drush/drush": "^11.0"
