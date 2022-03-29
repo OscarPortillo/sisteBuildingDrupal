@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd95c0f408019e7a25b1d7b56415b502",
+    "content-hash": "cd3cfef5ad97390b757c1c08bcfe177b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1344,6 +1344,69 @@
             }
         },
         {
+            "name": "drupal/back_to_top",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/back_to_top.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/back_to_top-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "a95add76833f63e613842dc552f9b5fd6c8a3b7e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*",
+                "drupal/jquery_ui_effects": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1629465392",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alsén",
+                    "homepage": "https://www.drupal.org/user/1726528"
+                },
+                {
+                    "name": "Nitesh Sethia",
+                    "homepage": "https://www.drupal.org/user/2474982"
+                },
+                {
+                    "name": "acke",
+                    "homepage": "https://www.drupal.org/user/765764"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "sumitmadan",
+                    "homepage": "https://www.drupal.org/user/1538790"
+                }
+            ],
+            "description": "Back To Top adds a button that hovers in the bottom of your screen and allow users to smoothly scroll up the page using jQuery.",
+            "homepage": "https://www.drupal.org/project/back_top_top",
+            "support": {
+                "source": "https://git.drupalcode.org/project/back_to_top",
+                "issues": "https://www.drupal.org/project/issues/back_top_top"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.3.9",
             "source": {
@@ -1807,6 +1870,260 @@
             "homepage": "https://www.drupal.org/project/d8w3css",
             "support": {
                 "source": "https://git.drupalcode.org/project/d8w3css"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "64c19ecc8902e2b4b1ab0cc5f5fe28dbc83bfebe"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1582149957",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "jjeff",
+                    "homepage": "https://www.drupal.org/user/17190"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "litwol",
+                    "homepage": "https://www.drupal.org/user/78134"
+                },
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                },
+                {
+                    "name": "mfer",
+                    "homepage": "https://www.drupal.org/user/25701"
+                },
+                {
+                    "name": "mikelutz",
+                    "homepage": "https://www.drupal.org/user/2972409"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui_effects",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_effects.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_effects-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "61c5eba64745911982aee1df8720f56825d5b62c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1607379530",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Effects library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_effects",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_effects"
+            }
+        },
+        {
+            "name": "drupal/replicate",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/replicate.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/replicate-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "5d8e82a4792d80bdf495db2026955a14c326598c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1576519385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "jgalletta",
+                    "homepage": "https://www.drupal.org/user/1187850"
+                },
+                {
+                    "name": "vbouchet",
+                    "homepage": "https://www.drupal.org/user/1671428"
+                }
+            ],
+            "description": "Replicate provide an API to replicate (duplicate) entities. This modules also provide hooks to control exactly how parts of an entity are duplicated.",
+            "homepage": "https://www.drupal.org/project/replicate",
+            "support": {
+                "source": "https://git.drupalcode.org/project/replicate"
+            }
+        },
+        {
+            "name": "drupal/replicate_ui",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/replicate_ui.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/replicate_ui-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "ea4dba722f39daa7d936eb950159d4d9112e5ba0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/replicate": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1576520289",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "btopro",
+                    "homepage": "https://www.drupal.org/user/24286"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "dhruveshdtripathi",
+                    "homepage": "https://www.drupal.org/user/3083735"
+                },
+                {
+                    "name": "kbrinner",
+                    "homepage": "https://www.drupal.org/user/565800"
+                }
+            ],
+            "description": "Provides a UI for Replicate (local tasks, entity operations with a form)",
+            "homepage": "https://www.drupal.org/project/replicate_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/replicate_ui"
             }
         },
         {
