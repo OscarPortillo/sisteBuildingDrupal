@@ -1,0 +1,41 @@
+uuid: 461a2304-4062-49b7-b77e-e027776fcf47
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.comentarios.body
+    - field.field.node.comentarios.comment
+    - node.type.comentarios
+  module:
+    - comment
+    - text
+    - user
+id: node.comentarios.default
+targetEntityType: node
+bundle: comentarios
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

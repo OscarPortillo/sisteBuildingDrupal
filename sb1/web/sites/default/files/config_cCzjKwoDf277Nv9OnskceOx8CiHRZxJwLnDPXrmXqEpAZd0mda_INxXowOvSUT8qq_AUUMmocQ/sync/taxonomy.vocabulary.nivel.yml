@@ -1,0 +1,8 @@
+uuid: b2853c7e-4121-4e88-8b17-e626e844c97c
+langcode: es
+status: true
+dependencies: {  }
+name: Nivel
+vid: nivel
+description: 'Nivel de conocimiento adquirido'
+weight: 0

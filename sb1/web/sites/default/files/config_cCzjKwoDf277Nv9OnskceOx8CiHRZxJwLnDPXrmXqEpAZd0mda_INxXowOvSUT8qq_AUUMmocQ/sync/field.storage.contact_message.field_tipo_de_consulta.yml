@@ -1,0 +1,30 @@
+uuid: 94f39ea1-89f6-4c61-a667-19b64e3f38a1
+langcode: es
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_tipo_de_consulta
+field_name: field_tipo_de_consulta
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Consulta
+    -
+      value: '2'
+      label: Sugerencia
+    -
+      value: '3'
+      label: Reclamación
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

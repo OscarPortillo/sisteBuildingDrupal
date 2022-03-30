@@ -1,0 +1,11 @@
+uuid: 15dcb3c9-cf32-4c5d-ba7a-7d8ef37fe5a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nivel
+id: taxonomy_term.nivel
+target_entity_type_id: taxonomy_term
+target_bundle: nivel
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: f607305c-1c23-4069-9e15-19f08a276449
+langcode: es
+status: true
+dependencies: {  }
+id: sugerencias
+label: Sugerencias
+recipients:
+  - admin@sb1.com
+reply: "Hola.\r\n\r\nGracias por las sugerencias, analizaremos y estudiaremos las posibilidades de mejorar nuestro sitio web.\r\n\r\nSaludos, SB1 team."
+weight: 0
+message: ''
+redirect: /

@@ -1,0 +1,8 @@
+uuid: e0514cef-e7ab-44c2-8afb-54486d7c13cf
+langcode: es
+status: true
+dependencies: {  }
+id: secciones
+label: Secciones
+description: ''
+locked: false

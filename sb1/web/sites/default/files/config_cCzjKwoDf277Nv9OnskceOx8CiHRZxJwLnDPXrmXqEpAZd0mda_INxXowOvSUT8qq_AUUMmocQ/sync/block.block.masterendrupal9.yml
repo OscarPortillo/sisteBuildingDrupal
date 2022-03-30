@@ -1,0 +1,25 @@
+uuid: 1a3dedd9-d6e7-4016-bd53-108c457255ee
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:90096a56-33ec-4613-b5a8-47db3da08ea0'
+  module:
+    - block_content
+  theme:
+    - drupal8_w3css_theme
+id: masterendrupal9
+theme: drupal8_w3css_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:90096a56-33ec-4613-b5a8-47db3da08ea0'
+settings:
+  id: 'block_content:90096a56-33ec-4613-b5a8-47db3da08ea0'
+  label: 'Máster en drupal 9'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

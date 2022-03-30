@@ -1,0 +1,18 @@
+uuid: c0946495-42db-4ddb-86dd-9473130844b5
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Noticia
+type: noticia
+description: "Paso 1. Formulario de creación de tipo de contenido\r\nPara crear un nuevo tipo de contenido, accede a:\r\nAdministración  Estructura  Tipos de contenido\r\ny haz clic en el enlace Añadir tipo de contenido. También puedes acceder directamente a través de\r\nla URL /admin/structure/types/add.\r\nPaso 2. Completar los campos de Identificación del tipo de contenido\r\nCompleta los campos de Identificación del tipo de contenido: Nombre, Nombre de sistema (o tipo)\r\ny Descripción [F5.2l]:\r\n- El Nombre del tipo de contenido será \"Noticia\", que será el nombre que verán los usuarios al\r\ncrear un contenido de este tipo.\r\n- El Nombre de sistema o Tipo será \"noticia\". El tipo es un nombre que usará Drupal\r\ninternamente y solo puede contener letras minúsculas, números y guiones bajos.\r\n- Por último, añadimos una pequeña Descripción sobre el tipo de contenido, incluyendo el uso\r\npara el que está pensado y su configuración por defecto."
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

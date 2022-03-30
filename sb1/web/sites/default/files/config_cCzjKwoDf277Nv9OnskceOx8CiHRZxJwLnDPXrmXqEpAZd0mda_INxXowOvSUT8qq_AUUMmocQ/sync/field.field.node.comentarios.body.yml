@@ -1,0 +1,23 @@
+uuid: c5248bd6-1632-476b-af0e-772672eb93d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.comentarios
+  module:
+    - text
+id: node.comentarios.body
+field_name: body
+entity_type: node
+bundle: comentarios
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

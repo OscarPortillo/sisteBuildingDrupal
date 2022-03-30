@@ -1,0 +1,38 @@
+uuid: 76994299-b64b-4b29-8395-fb4f4d3cba2b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foto
+    - node.type.noticia
+  module:
+    - image
+id: node.noticia.field_foto
+field_name: field_foto
+entity_type: node
+bundle: noticia
+label: foto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: noticias
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

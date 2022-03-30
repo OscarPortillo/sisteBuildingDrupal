@@ -1,0 +1,8 @@
+uuid: 66264b40-9d64-43a7-a2ef-06432e395c83
+langcode: es
+status: true
+dependencies: {  }
+id: mi-menu
+label: 'Mi menú'
+description: 'Menú de enlaces a mi s páginas habituales'
+locked: false

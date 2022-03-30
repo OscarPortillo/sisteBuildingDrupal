@@ -1,0 +1,18 @@
+uuid: 73511dd3-fb4e-4213-a8dd-e2146b4814bb
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.field_me_gusta
+field_name: field_me_gusta
+entity_type: comment
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

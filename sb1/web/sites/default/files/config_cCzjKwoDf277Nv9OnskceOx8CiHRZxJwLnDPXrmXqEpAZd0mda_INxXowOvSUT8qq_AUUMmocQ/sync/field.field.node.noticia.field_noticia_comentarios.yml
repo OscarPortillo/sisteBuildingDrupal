@@ -1,0 +1,33 @@
+uuid: 64d2e876-b31f-47f8-81a4-22af651403a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticia_comentarios
+    - node.type.noticia
+  module:
+    - comment
+id: node.noticia.field_noticia_comentarios
+field_name: field_noticia_comentarios
+entity_type: node
+bundle: noticia
+label: 'comentarios noticias'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 20
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

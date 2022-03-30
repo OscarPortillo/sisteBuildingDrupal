@@ -1,0 +1,22 @@
+uuid: 31ec4616-7bbc-4f12-8d40-2b8485512a48
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal8_w3css_subtheme
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: drupal8_w3css_subtheme_help
+theme: drupal8_w3css_subtheme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

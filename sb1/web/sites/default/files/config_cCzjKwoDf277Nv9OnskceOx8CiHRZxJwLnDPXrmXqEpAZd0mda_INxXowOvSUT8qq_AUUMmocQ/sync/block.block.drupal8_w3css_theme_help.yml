@@ -1,0 +1,22 @@
+uuid: 8e326cac-a62f-49e6-a4a7-c6c9f64f9748
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal8_w3css_theme
+_core:
+  default_config_hash: o18PjysFmKtSO5Wi2d0V9Kw-EqwdE69bLenXZEwvK5E
+id: drupal8_w3css_theme_help
+theme: drupal8_w3css_theme
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

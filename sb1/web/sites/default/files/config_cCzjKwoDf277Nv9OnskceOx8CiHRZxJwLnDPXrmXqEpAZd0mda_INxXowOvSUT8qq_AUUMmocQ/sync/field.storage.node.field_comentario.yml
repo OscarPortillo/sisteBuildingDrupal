@@ -1,0 +1,20 @@
+uuid: 5f251da5-34b2-4678-a256-dc6af558a15b
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_comentario
+field_name: field_comentario
+entity_type: node
+type: comment
+settings:
+  comment_type: comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

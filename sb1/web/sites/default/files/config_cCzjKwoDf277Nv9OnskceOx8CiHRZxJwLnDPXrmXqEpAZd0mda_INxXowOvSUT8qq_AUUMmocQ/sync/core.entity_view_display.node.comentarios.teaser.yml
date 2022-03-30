@@ -1,0 +1,33 @@
+uuid: d73b168b-8b33-4c44-a383-199b3d07e78f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.comentarios.body
+    - field.field.node.comentarios.comment
+    - node.type.comentarios
+  module:
+    - text
+    - user
+id: node.comentarios.teaser
+targetEntityType: node
+bundle: comentarios
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  langcode: true

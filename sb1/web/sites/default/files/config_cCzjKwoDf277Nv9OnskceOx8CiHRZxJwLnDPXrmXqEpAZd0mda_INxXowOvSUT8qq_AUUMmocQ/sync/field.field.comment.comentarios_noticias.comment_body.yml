@@ -1,0 +1,21 @@
+uuid: 1877d34f-d38f-4683-ae53-395d16733e4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentarios_noticias
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comentarios_noticias.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comentarios_noticias
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

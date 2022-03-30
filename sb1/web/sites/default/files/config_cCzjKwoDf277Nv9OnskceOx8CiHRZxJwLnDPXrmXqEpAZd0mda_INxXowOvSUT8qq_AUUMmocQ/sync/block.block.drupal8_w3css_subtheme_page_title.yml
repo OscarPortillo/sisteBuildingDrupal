@@ -1,0 +1,20 @@
+uuid: fe970441-7ad3-4468-8292-77abe40c695b
+langcode: es
+status: true
+dependencies:
+  theme:
+    - drupal8_w3css_subtheme
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: drupal8_w3css_subtheme_page_title
+theme: drupal8_w3css_subtheme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

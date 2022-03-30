@@ -1,0 +1,21 @@
+uuid: 7f00b9fc-367e-4167-91c4-f3e003bba340
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupal8_w3css_theme
+id: formulariodebusqueda
+theme: drupal8_w3css_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

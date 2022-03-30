@@ -1,0 +1,20 @@
+uuid: 41965fee-af8e-483a-95c0-05ad668621de
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - drupal8_w3css_theme
+id: iniciodesesion
+theme: drupal8_w3css_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Inicio de sesión'
+  label_display: visible
+  provider: user
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: 838e6977-a062-465d-8a43-bb70d0723065
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.secciones
+id: taxonomy_term.secciones
+target_entity_type_id: taxonomy_term
+target_bundle: secciones
+default_langcode: site_default
+language_alterable: false

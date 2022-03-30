@@ -1,0 +1,23 @@
+uuid: ea17c368-bd70-4eb6-bdd6-982eeb2de182
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentarios_noticias
+    - field.storage.comment.field_me_gusta
+id: comment.comentarios_noticias.field_me_gusta
+field_name: field_me_gusta
+entity_type: comment
+bundle: comentarios_noticias
+label: 'me gusta'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Si
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 2aa82fff-a857-44ec-886e-be420d8ecc3a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal8_w3css_theme
+_core:
+  default_config_hash: 77s443SbxpaD9wY75o720nAWsS4ejvWvH927ouPRinU
+id: drupal8_w3css_theme_powered
+theme: drupal8_w3css_theme
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

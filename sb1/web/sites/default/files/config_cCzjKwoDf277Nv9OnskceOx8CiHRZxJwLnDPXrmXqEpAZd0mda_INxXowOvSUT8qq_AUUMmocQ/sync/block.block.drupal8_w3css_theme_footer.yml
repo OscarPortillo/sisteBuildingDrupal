@@ -1,0 +1,27 @@
+uuid: b5d47da3-a5f7-45ef-bf25-d406ece6e2c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - drupal8_w3css_theme
+_core:
+  default_config_hash: cOGu9KiV36jPd1ypk0yl3gVFgfhEzTx6mCmzLxSJ61I
+id: drupal8_w3css_theme_footer
+theme: drupal8_w3css_theme
+region: footer_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

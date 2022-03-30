@@ -1,0 +1,25 @@
+uuid: a68437f4-431b-4ebd-af61-fb708173e057
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mi-menu
+  module:
+    - system
+  theme:
+    - drupal8_w3css_subtheme
+id: drupal8_w3css_subtheme_mimenu
+theme: drupal8_w3css_subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:mi-menu'
+settings:
+  id: 'system_menu_block:mi-menu'
+  label: 'Mi menú'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

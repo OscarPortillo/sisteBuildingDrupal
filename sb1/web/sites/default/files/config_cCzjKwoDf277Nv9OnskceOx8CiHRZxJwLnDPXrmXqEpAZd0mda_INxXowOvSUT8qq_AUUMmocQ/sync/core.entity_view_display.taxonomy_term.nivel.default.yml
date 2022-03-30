@@ -1,0 +1,33 @@
+uuid: 49c72493-2f17-49ac-a8e7-34121c4e57f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nivel.field_foto
+    - taxonomy.vocabulary.nivel
+  module:
+    - image
+    - text
+id: taxonomy_term.nivel.default
+targetEntityType: taxonomy_term
+bundle: nivel
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_foto:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

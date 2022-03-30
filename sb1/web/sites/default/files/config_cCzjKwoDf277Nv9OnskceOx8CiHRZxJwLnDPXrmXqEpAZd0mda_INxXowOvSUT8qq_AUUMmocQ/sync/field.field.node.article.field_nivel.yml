@@ -1,0 +1,29 @@
+uuid: b7fe3a9b-bfba-478d-8d82-4c5d3833a6c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nivel
+    - node.type.article
+    - taxonomy.vocabulary.nivel
+id: node.article.field_nivel
+field_name: field_nivel
+entity_type: node
+bundle: article
+label: Nivel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nivel: nivel
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: tags
+field_type: entity_reference

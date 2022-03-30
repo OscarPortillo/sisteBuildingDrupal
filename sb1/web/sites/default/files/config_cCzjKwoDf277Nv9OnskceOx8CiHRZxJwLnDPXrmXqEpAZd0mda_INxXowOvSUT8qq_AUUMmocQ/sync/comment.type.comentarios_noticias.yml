@@ -1,0 +1,8 @@
+uuid: e116a068-6e44-4b3e-ba1d-070becf0ff58
+langcode: es
+status: true
+dependencies: {  }
+id: comentarios_noticias
+label: 'comentarios noticias'
+target_entity_type_id: node
+description: 'Comentarios para el contenido de tipo de noticias'

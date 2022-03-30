@@ -1,0 +1,21 @@
+uuid: c1753930-8184-4b6d-baa1-056522d203ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.storage.contact_message.field_tipo_de_consulta
+  module:
+    - options
+id: contact_message.personal.field_tipo_de_consulta
+field_name: field_tipo_de_consulta
+entity_type: contact_message
+bundle: personal
+label: 'Tipo de consulta'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
