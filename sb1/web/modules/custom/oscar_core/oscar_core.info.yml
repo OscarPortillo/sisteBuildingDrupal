@@ -1,0 +1,5 @@
+name: 'Oscar Core'
+type: module
+description: 'bien cabron'
+core_version_requirement: ^8 || ^9
+package: 'Custom'

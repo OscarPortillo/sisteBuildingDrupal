@@ -20,18 +20,22 @@
         "drupal/adminimal_theme": "^1.6",
         "drupal/allowed_formats": "^1.5",
         "drupal/back_to_top": "^2.0",
+        "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/d8w3css": "^2.0",
+        "drupal/dynamic_entity_reference": "^1.16",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/editor_file": "^1.6",
+        "drupal/field_group": "^3.2",
         "drupal/hierarchical_taxonomy_menu": "^1.42",
         "drupal/jquery_ui": "^1.4",
         "drupal/jquery_ui_effects": "^1.2",
         "drupal/masquerade": "^2.0@beta",
         "drupal/replicate": "^1.0",
         "drupal/replicate_ui": "^1.0",
+        "drupal/simplify": "^1.2",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/taxonomy_unique": "^2.3",
         "drush/drush": "^11.0"
@@ -46,7 +50,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "drupal/console-extend-plugin": true
         }
     },
     "extra": {
