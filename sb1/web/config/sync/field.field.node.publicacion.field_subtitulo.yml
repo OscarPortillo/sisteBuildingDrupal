@@ -1,0 +1,19 @@
+uuid: 8991a64a-4c07-499a-a0ec-dc074e03f9ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitulo
+    - node.type.publicacion
+id: node.publicacion.field_subtitulo
+field_name: field_subtitulo
+entity_type: node
+bundle: publicacion
+label: Subtítulo
+description: "Subtítulo de la publicación\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

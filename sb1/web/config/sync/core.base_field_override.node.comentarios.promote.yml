@@ -1,0 +1,22 @@
+uuid: 9db44847-b257-487f-be66-526e043db450
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comentarios
+id: node.comentarios.promote
+field_name: promote
+entity_type: node
+bundle: comentarios
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

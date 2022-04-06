@@ -1,0 +1,4 @@
+secciones: 1
+secciones_message: 'Term %term already exists in vocabulary %vocabulary.'
+genero_publicacion: 0
+genero_publicacion_message: 'Term %term already exists in vocabulary %vocabulary.'

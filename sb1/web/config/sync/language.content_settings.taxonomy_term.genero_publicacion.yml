@@ -1,0 +1,11 @@
+uuid: 119068ab-5e3d-4377-ae43-ff7846c37fcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_publicacion
+id: taxonomy_term.genero_publicacion
+target_entity_type_id: taxonomy_term
+target_bundle: genero_publicacion
+default_langcode: site_default
+language_alterable: false

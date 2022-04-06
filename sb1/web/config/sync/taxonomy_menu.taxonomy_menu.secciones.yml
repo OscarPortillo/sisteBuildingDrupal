@@ -1,0 +1,16 @@
+uuid: 97e36664-66b0-451d-b3c0-9009601b1c8f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.secciones
+    - taxonomy.vocabulary.secciones
+id: secciones
+label: Secciones
+vocabulary: secciones
+menu: secciones
+expanded: false
+depth: 0
+menu_parent: 'secciones:'
+description_field_name: name
+use_term_weight_order: true

@@ -1,0 +1,65 @@
+uuid: 49bbfe37-0d63-4d35-83bb-98624b068d30
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.autor.body
+    - field.field.node.autor.field_autor_destacado
+    - field.field.node.autor.field_autor_foto
+    - field.field.node.autor.field_fecha_de_nacimiento
+    - field.field.node.autor.field_pais_de_na
+    - field.field.node.autor.field_sobre_el_autor
+    - node.type.autor
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.autor.teaser
+targetEntityType: node
+bundle: autor
+mode: teaser
+content:
+  field_autor_foto:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_fecha_de_nacimiento:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_pais_de_na:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sobre_el_autor:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_autor_destacado: true
+  langcode: true

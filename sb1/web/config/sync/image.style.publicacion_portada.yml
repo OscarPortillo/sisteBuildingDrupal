@@ -1,0 +1,29 @@
+uuid: e10879be-3130-4ea9-a368-990fa8a30811
+langcode: es
+status: true
+dependencies: {  }
+name: publicacion_portada
+label: 'Publicación portada'
+effects:
+  3ff7d820-e5c8-46d9-8cc4-8dc7569cef8c:
+    uuid: 3ff7d820-e5c8-46d9-8cc4-8dc7569cef8c
+    id: image_convert
+    weight: -8
+    data:
+      extension: jpeg
+  99672e68-0054-4fb6-9bc5-aafd522d9749:
+    uuid: 99672e68-0054-4fb6-9bc5-aafd522d9749
+    id: image_crop
+    weight: -9
+    data:
+      width: 400
+      height: 400
+      anchor: center-center
+  a2117e29-8cf7-4cea-bad8-d70933958927:
+    uuid: a2117e29-8cf7-4cea-bad8-d70933958927
+    id: image_rotate
+    weight: -10
+    data:
+      degrees: 90
+      bgcolor: ''
+      random: false

@@ -1,0 +1,60 @@
+uuid: a29aa477-0fb2-4619-9596-afafbe0781d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.comentarios
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'txt pdf png jpng'
+    max_size: ''
+format: comentarios
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formato
+          items:
+            - Bold
+            - Italic
+        -
+          name: Enlaces
+          items:
+            - DrupalUnlink
+            - DrupalLink
+        -
+          name: Listas
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Multimedia
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Herramientas
+          items:
+            - DrupalFile
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

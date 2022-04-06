@@ -1,0 +1,21 @@
+uuid: 8f5c4040-70cf-45a0-aa06-7b8f6d69a9e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicacion_formato
+    - node.type.publicacion
+  module:
+    - options
+id: node.publicacion.field_publicacion_formato
+field_name: field_publicacion_formato
+entity_type: node
+bundle: publicacion
+label: Formato
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: fb4a2a27-847a-47c9-ac0b-065c61f215df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noticias_video
+    - node.type.noticia
+  module:
+    - video_embed_field
+id: node.noticia.field_noticias_video
+field_name: field_noticias_video
+entity_type: node
+bundle: noticia
+label: 'Noticias Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: '0'
+field_type: video_embed_field

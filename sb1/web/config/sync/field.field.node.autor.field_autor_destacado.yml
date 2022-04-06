@@ -1,0 +1,23 @@
+uuid: 3d293a30-92c4-40b5-9148-fbb05fe15bf6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_destacado
+    - node.type.autor
+id: node.autor.field_autor_destacado
+field_name: field_autor_destacado
+entity_type: node
+bundle: autor
+label: 'Autor destacado'
+description: 'Dice si el autor es destacado o no'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

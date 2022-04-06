@@ -1,0 +1,23 @@
+uuid: 5263d115-1e59-44b5-b721-f2841db4a9f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_idioma_de_la_publicacion
+    - node.type.publicacion
+id: node.publicacion.field_idioma_de_la_publicacion
+field_name: field_idioma_de_la_publicacion
+entity_type: node
+bundle: publicacion
+label: 'Idioma de la publicación'
+description: "Idioma de la publicación\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:configurable_language'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

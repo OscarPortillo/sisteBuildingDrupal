@@ -1,0 +1,25 @@
+uuid: db115c93-e321-4322-b8c7-f127b7d22e8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.secciones
+  module:
+    - system
+  theme:
+    - drupal8_w3css_theme
+id: secciones
+theme: drupal8_w3css_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:secciones'
+settings:
+  id: 'system_menu_block:secciones'
+  label: Secciones
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

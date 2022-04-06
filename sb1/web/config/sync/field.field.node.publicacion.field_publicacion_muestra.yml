@@ -1,0 +1,27 @@
+uuid: 5191649f-6a2b-4fbd-bda4-29963a07f862
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicacion_muestra
+    - node.type.publicacion
+  module:
+    - file
+id: node.publicacion.field_publicacion_muestra
+field_name: field_publicacion_muestra
+entity_type: node
+bundle: publicacion
+label: 'Capítulo muestra'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: libreria/publicaciones
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

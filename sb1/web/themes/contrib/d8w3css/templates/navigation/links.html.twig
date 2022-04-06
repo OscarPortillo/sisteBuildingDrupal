@@ -41,7 +41,7 @@
   {%- endif -%}
   <ul{{ attributes.addClass('w3-ul') }}>
     {%- for item in links -%}
-      <li{{ item.attributes.addClass('w3-left w3-small') }}>
+      <li{{ item.attributes.addClass('w3-left w3-small read-more') }}>
         {%- if item.link -%}
           {{ item.link }}
         {%- elseif item.text_attributes -%}

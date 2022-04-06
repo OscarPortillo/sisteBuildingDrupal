@@ -1,0 +1,38 @@
+uuid: 827a0f8e-68a5-48ad-af70-91e756e4b5b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autor_foto
+    - node.type.autor
+  module:
+    - image
+id: node.autor.field_autor_foto
+field_name: field_autor_foto
+entity_type: node
+bundle: autor
+label: Foto
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: libreria/autores
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

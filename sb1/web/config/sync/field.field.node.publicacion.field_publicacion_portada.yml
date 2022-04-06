@@ -1,0 +1,38 @@
+uuid: 4aafb8c2-07e4-4121-be14-967b21507629
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicacion_portada
+    - node.type.publicacion
+  module:
+    - image
+id: node.publicacion.field_publicacion_portada
+field_name: field_publicacion_portada
+entity_type: node
+bundle: publicacion
+label: Portada
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: libreria/publicaciones
+  file_extensions: 'png jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

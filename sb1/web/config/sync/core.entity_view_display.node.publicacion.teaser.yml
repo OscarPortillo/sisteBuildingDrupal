@@ -1,0 +1,71 @@
+uuid: 514b4acd-5300-4cb8-a32e-0d3d99ca4e63
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.field_fecha_de_publicacion
+    - field.field.node.publicacion.field_genero
+    - field.field.node.publicacion.field_idioma_de_la_publicacion
+    - field.field.node.publicacion.field_publicacion_autor
+    - field.field.node.publicacion.field_publicacion_editor
+    - field.field.node.publicacion.field_publicacion_formato
+    - field.field.node.publicacion.field_publicacion_isbn
+    - field.field.node.publicacion.field_publicacion_muestra
+    - field.field.node.publicacion.field_publicacion_paginas
+    - field.field.node.publicacion.field_publicacion_portada
+    - field.field.node.publicacion.field_sinopsis
+    - field.field.node.publicacion.field_subtitulo
+    - node.type.publicacion
+  module:
+    - image
+    - text
+    - user
+id: node.publicacion.teaser
+targetEntityType: node
+bundle: publicacion
+mode: teaser
+content:
+  field_publicacion_autor:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_publicacion_portada:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sinopsis:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_fecha_de_publicacion: true
+  field_genero: true
+  field_idioma_de_la_publicacion: true
+  field_publicacion_editor: true
+  field_publicacion_formato: true
+  field_publicacion_isbn: true
+  field_publicacion_muestra: true
+  field_publicacion_paginas: true
+  field_subtitulo: true
+  langcode: true

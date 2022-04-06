@@ -8,6 +8,12 @@ PHP_VER ?= 8.1
 test:
 	cd ./tests/$(DRUPAL_VER) && PHP_VER=$(PHP_VER) ./run.sh
 
+start:
+	docker-compose up
+
+stop:
+	docker-compose stop
+
 build_containers:
 	docker-compose up -d
 

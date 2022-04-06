@@ -1,0 +1,144 @@
+uuid: 989b511e-adfe-4e9d-bef3-32b3e60a6ca0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.field_fecha_de_publicacion
+    - field.field.node.publicacion.field_genero
+    - field.field.node.publicacion.field_idioma_de_la_publicacion
+    - field.field.node.publicacion.field_publicacion_autor
+    - field.field.node.publicacion.field_publicacion_editor
+    - field.field.node.publicacion.field_publicacion_formato
+    - field.field.node.publicacion.field_publicacion_isbn
+    - field.field.node.publicacion.field_publicacion_muestra
+    - field.field.node.publicacion.field_publicacion_paginas
+    - field.field.node.publicacion.field_publicacion_portada
+    - field.field.node.publicacion.field_sinopsis
+    - field.field.node.publicacion.field_subtitulo
+    - node.type.publicacion
+  module:
+    - datetime
+    - file
+    - options
+    - responsive_image
+    - text
+    - user
+id: node.publicacion.full
+targetEntityType: node
+bundle: publicacion
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_fecha_de_publicacion:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_genero:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_idioma_de_la_publicacion:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_publicacion_autor:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_publicacion_editor:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_publicacion_formato:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_publicacion_isbn:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_publicacion_muestra:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_publicacion_paginas:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_publicacion_portada:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sinopsis:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_subtitulo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

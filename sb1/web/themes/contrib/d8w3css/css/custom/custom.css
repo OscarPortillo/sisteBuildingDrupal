@@ -1,0 +1,6 @@
+.node__title > a > span, .read-more > a{
+  color: blue;
+}
+.node__title > a > span:hover, .read-more > a:hover{
+  color: red;
+}

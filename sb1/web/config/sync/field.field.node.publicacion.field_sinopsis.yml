@@ -1,0 +1,27 @@
+uuid: 40567235-b580-4643-955b-86e766c03b24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sinopsis
+    - node.type.publicacion
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: node.publicacion.field_sinopsis
+field_name: field_sinopsis
+entity_type: node
+bundle: publicacion
+label: Sinopsis
+description: 'Sinopsis de la publicación'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

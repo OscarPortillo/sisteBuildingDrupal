@@ -779,8 +779,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_cCzjKwoDf277Nv9OnskceOx8CiHRZxJwLnDPXrmXqEpAZd0mda_INxXowOvSUT8qq_AUUMmocQ/sync';
-#$settings['file_private_path'] = '/home/ohportillo/Documentos/drupalImagesPrivate';
+$settings['config_sync_directory'] = 'config/sync';
+$settings['file_private_path'] = '/home/ohportillo/filesPrivate';
 $settings['trusted_host_patterns'] = [
   '^sb1.localhost$'
 ];

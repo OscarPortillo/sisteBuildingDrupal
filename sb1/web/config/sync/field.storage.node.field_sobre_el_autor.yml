@@ -1,0 +1,19 @@
+uuid: f8a65f45-ad50-4fb5-949f-b0c6959d0619
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_sobre_el_autor
+field_name: field_sobre_el_autor
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

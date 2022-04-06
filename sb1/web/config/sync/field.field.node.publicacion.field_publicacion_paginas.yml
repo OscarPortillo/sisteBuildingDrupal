@@ -1,0 +1,23 @@
+uuid: f50e2722-0f5e-4f63-b9d0-c9166e77f119
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicacion_paginas
+    - node.type.publicacion
+id: node.publicacion.field_publicacion_paginas
+field_name: field_publicacion_paginas
+entity_type: node
+bundle: publicacion
+label: 'Número de páginas'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: Páginas
+field_type: integer

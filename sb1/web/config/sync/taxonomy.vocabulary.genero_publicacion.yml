@@ -1,0 +1,8 @@
+uuid: bebf2755-34a6-412f-8478-49887e528792
+langcode: es
+status: true
+dependencies: {  }
+name: 'Género de publicación'
+vid: genero_publicacion
+description: 'Define el tipo de género de la publicación'
+weight: 0

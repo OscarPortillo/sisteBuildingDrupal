@@ -28,6 +28,7 @@ d8w3css-global-styling:
   css:
     base:
       css/base/base.css: { weight: -9 }
+      css/custom/custom.css: {}
     layout:
       css/layout/layout-regions.css: { weight: -8 }
       css/layout/layout-width.css: { weight: -7 }

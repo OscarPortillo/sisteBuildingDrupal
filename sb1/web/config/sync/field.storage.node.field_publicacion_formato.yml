@@ -1,0 +1,30 @@
+uuid: d60f5ba6-cd3a-464d-99d0-39f75ee1a456
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_publicacion_formato
+field_name: field_publicacion_formato
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Tapadura
+    -
+      value: '2'
+      label: 'Tapa blanda'
+    -
+      value: '3'
+      label: eBook
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
