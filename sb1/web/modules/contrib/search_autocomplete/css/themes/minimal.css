@@ -1,0 +1,25 @@
+/*
+ * SEARCH AUTOCOMPLETE
+ * Minimal theme.
+ */
+
+/**
+ * THEME MINIMAL
+ */
+
+/* Input box */
+.js input.form-autocomplete {
+  border: 1px solid #ccc;
+}
+
+/* Suggestion menu style */
+ul[data-sa-theme="minimal"] {
+  min-width: 350px;
+}
+
+ul[data-sa-theme="minimal"] > div.ui-autocomplete-field-group,
+ul[data-sa-theme="minimal"] .ui-autocomplete-fields > *,
+ul[data-sa-theme="minimal"] a.ui-menu-item-wrapper,
+ul[data-sa-theme="minimal"] a.ui-menu-item-wrapper.ui-state-active {
+  display: block;
+}

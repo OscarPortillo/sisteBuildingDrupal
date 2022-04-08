@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the search autocomplete module.
+ */
+
+/**
+ * Nothing but force a clean cache.
+ */
+function search_autocomplete_update_8102() {
+}

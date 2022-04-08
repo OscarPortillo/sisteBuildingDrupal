@@ -1,0 +1,45 @@
+{
+    "name": "drupal/language_access",
+    "description": "Provide access permissions by language.",
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/language_access",
+    "authors": [
+        {
+            "name": "Guietc",
+            "homepage": "https://www.drupal.org/user/3461503"
+        },
+        {
+            "name": "JeroenT",
+            "homepage": "https://www.drupal.org/user/2228934"
+        },
+        {
+            "name": "Jānis Bebrītis",
+            "homepage": "https://www.drupal.org/user/210269"
+        },
+        {
+            "name": "guncha25",
+            "homepage": "https://www.drupal.org/user/3149731"
+        },
+        {
+            "name": "maijs",
+            "homepage": "https://www.drupal.org/user/179101"
+        },
+        {
+            "name": "mikgreen",
+            "homepage": "https://www.drupal.org/user/14474"
+        },
+        {
+            "name": "rudins",
+            "homepage": "https://www.drupal.org/user/135873"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "drupal/core": "^9"
+    },
+    "require-dev": {
+        "drupal/simple_sitemap": "^3.0"
+    }
+}

@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * @file
+ * Provide access permissions by language.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\language_access\LimitLanguageOptionsCallback;
+use Drupal\language_access\Plugin\LanguageNegotiation\LanguageAccessNegotiationBrowser;
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_help().
+ */
+function language_access_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.language_access':
+      $text = file_get_contents(dirname(__FILE__) . '/README.md');
+      if (!\Drupal::moduleHandler()->moduleExists('markdown')) {
+        return '<pre>' . $text . '</pre>';
+      }
+      else {
+        // Use the Markdown filter to render the README.
+        $filter_manager = \Drupal::service('plugin.manager.filter');
+        $settings = \Drupal::configFactory()->get('markdown.settings')->getRawData();
+        $config = ['settings' => $settings];
+        $filter = $filter_manager->createInstance('markdown', $config);
+        return $filter->process($text, 'en');
+      }
+  }
+  return NULL;
+}
+
+/**
+ * Implements hook_language_switch_links_alter().
+ */
+function language_access_language_switch_links_alter(array &$links, $type, Url $url) {
+  $languages = \Drupal::languageManager()->getLanguages();
+  foreach ($languages as $language) {
+    if (!\Drupal::currentUser()->hasPermission('access language ' . $language->getId())) {
+      if (isset($links[$language->getId()])) {
+        unset($links[$language->getId()]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'user_form'.
+ */
+function language_access_form_user_form_alter(&$form, FormStateInterface $form_state) {
+  if (isset($form['language']['preferred_langcode'])) {
+    // Add our processing hook. Ensure the target user is available for
+    // permission checking.
+    $form['language']['preferred_langcode']['#pre_render']['language_access'] = [
+      LimitLanguageOptionsCallback::class,
+      'preRender',
+    ];
+    $form['language']['preferred_langcode']['#for_user'] = $form_state->getFormObject()->getEntity();
+  }
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter() for 'language_select'.
+ */
+function language_access_field_widget_language_select_form_alter(array &$element, FormStateInterface $form_state, array $context) {
+  $element['#after_build'][] = [
+    LimitLanguageOptionsCallback::class,
+    'afterBuild',
+  ];
+  $element['#for_user'] = \Drupal::currentUser();
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ *
+ * Hide hreflang tags for translations the current user doesn't have access to.
+ */
+function language_access_page_attachments_alter(array &$attachments) {
+  if (isset($attachments['#attached']['html_head_link'])) {
+    $languages = \Drupal::languageManager()->getLanguages();
+    foreach ($attachments['#attached']['html_head_link'] as $key => $html_head_link) {
+      // Check that we're altering the right tag.
+      if (!isset($html_head_link[0]['rel'], $html_head_link[0]['hreflang']) || $html_head_link[0]['rel'] !== 'alternate') {
+        continue;
+      }
+
+      // Check that the language exists.
+      if (!isset($languages[$html_head_link[0]['hreflang']])) {
+        continue;
+      }
+
+      // Check that the user doesn't have access to the language.
+      if (\Drupal::currentUser()->hasPermission('access language ' . $html_head_link[0]['hreflang'])) {
+        continue;
+      }
+
+      unset($attachments['#attached']['html_head_link'][$key]);
+    }
+  }
+}
+
+/**
+ * Implements hook_simple_sitemap_links_alter().
+ */
+function language_access_simple_sitemap_links_alter(array &$links) {
+  $languages = \Drupal::languageManager()->getLanguages();
+  $user = User::getAnonymousUser();
+
+  foreach ($links as $key => $link) {
+    if (isset($languages[$link['langcode']]) && !$user->hasPermission('access language ' . $link['langcode'])) {
+      unset($links[$key]);
+    }
+
+    if (isset($link['alternate_urls'])) {
+      foreach ($link['alternate_urls'] as $langcode => $alternate_url) {
+        if (isset($languages[$langcode]) && !$user->hasPermission('access language ' . $langcode)) {
+          unset($links[$key]['alternate_urls'][$langcode]);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_language_negotiation_info_alter().
+ *
+ * Replace the language-browser negotiation with our own plugin that checks th
+ * access to the languages.
+ *
+ * @see \Drupal\language\Plugin\LanguageNegotiation\LanguageNegotiationBrowser
+ * @see \Drupal\language_access\Plugin\LanguageNegotiation\LanguageAccessNegotiationBrowser
+ */
+function language_access_language_negotiation_info_alter(array &$negotiation_info) {
+  if (isset($negotiation_info['language-browser'])) {
+    $negotiation_info['language-browser']['class'] = LanguageAccessNegotiationBrowser::class;
+  }
+}

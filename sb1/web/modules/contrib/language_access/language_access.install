@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * The install and update code for language_access.
+ */
+
+use Drupal\user\Entity\Role;
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function language_access_install() {
+  $default_language = \Drupal::languageManager()->getDefaultLanguage();
+
+  /** @var \Drupal\user\RoleInterface[] $roles */
+  $roles = Role::loadMultiple([
+    RoleInterface::ANONYMOUS_ID,
+    RoleInterface::AUTHENTICATED_ID,
+  ]);
+
+  foreach ($roles as $role) {
+    $role
+      ->grantPermission('access language ' . $default_language->getId())
+      ->save();
+  }
+}
