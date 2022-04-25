@@ -1719,17 +1719,17 @@
         },
         {
             "name": "drupal/colorbox",
-            "version": "1.8.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "50e985bf46ca36437a0805f1752fb911bac58714"
+                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "af0eca9891e7134722ed785599e4476325cd1c29"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -1740,8 +1740,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1643833047",
+                    "version": "8.x-1.10",
+                    "datestamp": "1650376979",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1767,6 +1767,14 @@
                     "name": "Fredrik Jonsson",
                     "homepage": "https://www.drupal.org/u/frjo",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "jenlampton",
+                    "homepage": "https://www.drupal.org/user/85586"
+                },
+                {
+                    "name": "paulmckibben",
+                    "homepage": "https://www.drupal.org/user/279003"
                 }
             ],
             "description": "A light-weight, customizable lightbox plugin for jQuery.",
@@ -2063,16 +2071,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.9",
+            "version": "9.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774"
+                "reference": "ed6af33093f66a9c5048d02f9f2c326ad0e7e90c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/86b0c4496e20ae7f945e9a7f0404fafe191ab774",
-                "reference": "86b0c4496e20ae7f945e9a7f0404fafe191ab774",
+                "url": "https://api.github.com/repos/drupal/core/zipball/ed6af33093f66a9c5048d02f9f2c326ad0e7e90c",
+                "reference": "ed6af33093f66a9c5048d02f9f2c326ad0e7e90c",
                 "shasum": ""
             },
             "require": {
@@ -2314,13 +2322,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.9"
+                "source": "https://github.com/drupal/core/tree/9.3.12"
             },
-            "time": "2022-03-21T21:21:58+00:00"
+            "time": "2022-04-20T14:25:27+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.9",
+            "version": "9.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2364,13 +2372,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.9"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.12"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.3.9",
+            "version": "9.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2405,22 +2413,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.3.9"
+                "source": "https://github.com/drupal/core-project-message/tree/9.3.12"
             },
             "time": "2022-02-24T17:40:56+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.3.9",
+            "version": "9.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "3ce3f2b6145de56178e006fb2ef94089d32cf411"
+                "reference": "a8fa50016c1aa1eb7f4e54f590e6343d286c418f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/3ce3f2b6145de56178e006fb2ef94089d32cf411",
-                "reference": "3ce3f2b6145de56178e006fb2ef94089d32cf411",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/a8fa50016c1aa1eb7f4e54f590e6343d286c418f",
+                "reference": "a8fa50016c1aa1eb7f4e54f590e6343d286c418f",
                 "shasum": ""
             },
             "require": {
@@ -2429,7 +2437,7 @@
                 "doctrine/annotations": "1.13.2",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.3.9",
+                "drupal/core": "9.3.12",
                 "egulias/email-validator": "3.1.2",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.5.1",
@@ -2491,9 +2499,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.3.9"
+                "source": "https://github.com/drupal/core-recommended/tree/9.3.12"
             },
-            "time": "2022-03-21T21:21:58+00:00"
+            "time": "2022-04-20T14:25:27+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -3710,17 +3718,17 @@
         },
         {
             "name": "drupal/search_autocomplete",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_autocomplete.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_autocomplete-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "d7386e17f7bc8a2c52b516c0f23d3699b263c41d"
+                "url": "https://ftp.drupal.org/files/projects/search_autocomplete-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "b4dbad3506effaa67b633a2e1f4cf2eacff409ef"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -3728,8 +3736,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1591039197",
+                    "version": "2.0.2",
+                    "datestamp": "1649542388",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3744,10 +3752,6 @@
                 {
                     "name": "Dom.",
                     "homepage": "https://www.drupal.org/user/801982"
-                },
-                {
-                    "name": "MrSzymon",
-                    "homepage": "https://www.drupal.org/user/3524044"
                 }
             ],
             "description": "Provides autocompletion feature for fields in your Drupal site. This module ships with pre-existing autocompletion configurations.",

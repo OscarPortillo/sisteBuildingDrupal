@@ -205,9 +205,9 @@ function search_autocomplete_library_info_build() {
  */
 function search_autocomplete_library_info_alter(array &$libraries, $extension) {
   if ($extension == 'core' && isset($libraries['drupal.autocomplete'])) {
-    $libraries['drupal.autocomplete']['js'] = [
-      '/' . drupal_get_path('module', 'search_autocomplete') . '/js/jquery.autocomplete.js' => [],
-    ];
+    $libraries['drupal.autocomplete']['js'] = array_merge($libraries['drupal.autocomplete']['js'], [
+      '/' . drupal_get_path('module', 'search_autocomplete') . '/js/jquery.autocomplete.js' => ['weight' => 0],
+    ]);
   }
 }
 
